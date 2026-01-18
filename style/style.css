@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* common style */
+.common-width{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.bg-color{
+    background-color: #1A0B2E;
+}
+/* only use for text linear color */
+.linear-text-color{
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.display-flex{
+    display: flex;
+}
+
+/* navbar related style */
+.navbar{
+    justify-content: space-around;
+}
+.nav-titile{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#tech{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+#wave{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.nav-list {
+    align-items: center;
+    gap: 32px;
+}
+.nav-list li{
+    list-style: none;
+}
+.list-item{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;   
+}
+.nav-btn{
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 135px;
+    height: 44px;
+    border: none;
+    border-radius: 10000px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+
+/* banner section style */
+.banner-section{
+    /* border: 1px solid aqua; */
+    background-image: url("../image/hero-bg.png");
+    justify-content: center;
+}
+.banner-main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 550px;
+    height: 558px;
+
+}
+.image-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+}
+.circle-img{
+    width: 100%;
+}
+.mic-img{
+    position: absolute;
+}
+.banner-contant{
+    text-align: center;
+}
+.banner-titile{
+    
+}
