@@ -20,6 +20,12 @@
 .bg-color{
     background-color: #1A0B2E;
 }
+.p-tag-descriton{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-top: 4px;
+    
+}
 /* only use for text linear color */
 .linear-text-color{
     background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
@@ -94,7 +100,6 @@
     /* border: 1px solid red; */
     width: 550px;
     height: 558px;
-    margin-left: 29px;
     margin-top: 80px;
 
 }
@@ -103,7 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 385px;
+    width: 351px;
     height: 351px;
 }
 .circle-img{
@@ -137,11 +142,7 @@
     color: #FFFFFF;
     margin-top: 40px;
 }
-.banner-descriton{
-    font-size: 1rem;
-    color: #FFFFFF;
-    margin-top: 4px;
-}
+
 .btn-one{
    width: 201px;
    height: 44px;
@@ -162,7 +163,48 @@
     border: 1px solid #00FF88;
     border-radius: 10000px;
     font-size: 1.10rem;
+    margin-top: 24px;
     font-weight: 600px;
     margin-left: 9px;
     cursor: pointer;
+}
+/* podcast related style */
+.podcast-section{
+    height: 646px;
+}
+.podcast-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pod-titile{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+#hr{
+    max-width: 1200px;
+    height: 0px;
+    opacity: 10%;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: #FFFFFF;
+}
+.podcast-card{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 80px;
+}
+.card{
+    width: 240px;
+    height: 94px;
+    text-align: center;
+}
+.card-titile{
+    font-size: 3rem;
+    color: #00FF88;
+    font-weight: 800;
 }
