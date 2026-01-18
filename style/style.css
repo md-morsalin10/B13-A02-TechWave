@@ -76,6 +76,7 @@
     font-size: 1rem;
     font-weight: 600;
     color: #FFFFFF;
+    cursor: pointer;
     background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
 }
 
@@ -84,14 +85,19 @@
     /* border: 1px solid aqua; */
     background-image: url("../image/hero-bg.png");
     justify-content: center;
+    height: 760px;
 }
 .banner-main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 550px;
     height: 558px;
+    margin-left: 29px;
+    margin-top: 80px;
+    
+
 
 }
 .image-section{
@@ -99,8 +105,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    width: 385px;
+    height: 351px;
 }
 .circle-img{
     width: 100%;
@@ -108,9 +114,56 @@
 .mic-img{
     position: absolute;
 }
+.img-btn{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 200px;
+    width: 75px;
+    height: 38px;
+    background-color: #00FF88;
+    border-radius: 10000px;
+    border: none;
+    font-size: 1.20rem;
+    color: #1A0B2E;
+    font-weight: 600;
+    padding: 8px 16px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+}
+
 .banner-contant{
     text-align: center;
 }
 .banner-titile{
-    
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+.banner-descriton{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+.btn-one{
+   width: 201px;
+   height: 44px;
+   font-size: 1rem;
+   font-weight: 500px;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 10000px;
+   background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+   margin-top: 24px;
+   cursor: pointer;
+}
+.btn-two{
+    width: 147px;
+    height: 44px;
+    background-color: transparent;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+    font-size: 1.10rem;
+    font-weight: 600px;
+    margin-left: 9px;
 }
