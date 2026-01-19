@@ -118,6 +118,18 @@
 .mic-img{
     position: absolute;
 }
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1) rotate(-05deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(05deg);
+    }
+    100% {
+        transform: scale(1) rotate(-05deg);
+    }
+}
+
 .img-btn:hover{
     background-color: #FB09B4;
     transform: scale(1.1);
@@ -138,6 +150,7 @@
     padding: 8px 16px;
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
     transition: all 0.5s ease;
+    animation: pulse-animation 2s infinite ease-in-out;
 }
 
 .banner-contant{
@@ -149,7 +162,35 @@
     color: #FFFFFF;
     margin-top: 40px;
 }
-
+@keyframes btn-one {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes btn-two {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.btn-one:hover{
+    animation-play-state: paused;
+}
+.btn-two:hover{
+    background-color: #FB09B4;
+    animation-play-state: paused;
+}
 .btn-one{
    width: 201px;
    height: 44px;
@@ -161,6 +202,7 @@
    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
    margin-top: 24px;
    cursor: pointer;
+   animation: btn-one 2s infinite ease-in-out;
 }
 
 .btn-two{
@@ -175,6 +217,7 @@
     font-weight: 600px;
     margin-left: 9px;
     cursor: pointer;
+    animation: btn-two 2s infinite ease-in-out;
 }
 /* podcast related style */
 .podcast-section{
@@ -385,10 +428,16 @@ iframe{
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 76px;
 }
 .title-image{
     margin-bottom: 30px;
+}
+.footer-icon{
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 4px;
 }
 .footer-logo{
    margin-left: 10px;
@@ -400,8 +449,12 @@ iframe{
    margin-top: 40px;
    align-items: center;
    justify-content: center;
+   gap: 10px;
   
   
+}
+.footer-logo span{
+    gap: 5px;
 }
 .footer-description{
     font-size: 1rem;
@@ -427,7 +480,7 @@ iframe{
     border: none;
     display: none;
 }
-@media screen and (max-width:576px) {
+@media screen  and (max-width:576px) {
       .html, body{
       overflow-x: hidden; 
       width: 100%;
@@ -614,36 +667,42 @@ iframe{
     width: 100%;
     background-size: 100% auto;
     height: auto;
-    height: 248px;
+    height: 265px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
   .title-image{
     width: 219px;
     height: 32px;
+    margin-bottom: 9px
   }
   .footer-container{
     width: 100%;
     height: 248px;
-    padding-top: 50px;
+    padding-top: 40px;
 
   }
   .logo-container{
-    width: 255px;
-    height: 64px;
-    margin: 0 auto;
-    /* margin-left: 120px; */
-    display: flex;
-    flex-wrap: wrap;
+    justify-items: center;
     justify-content: center;
     align-items: center;
-    gap: 15px;
 
+  }
+  .footer-icon{
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    gap: 0px;
+    width: 100%;          
+    margin-top: 0px
   }
   .footer-logo{
     margin-left: 0px;
     margin-right: 0px;
-    text-align: center;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
