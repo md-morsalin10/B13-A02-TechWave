@@ -163,6 +163,7 @@
    margin-top: 24px;
    cursor: pointer;
 }
+
 .btn-two{
     width: 147px;
     height: 44px;
@@ -190,6 +191,7 @@
     font-size: 3rem;
     font-weight: 700;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 #hr{
     max-width: 1200px;
@@ -269,6 +271,7 @@
 }
 .festure-des{
     margin-top: 14px;
+    opacity: 60%;
 }
 
 /* youtube video related style */
@@ -351,6 +354,7 @@ iframe{
     opacity: 60%;
     margin-top: 16px;
 }
+
 .h-logo{
     width: 40px;
     height: 40px;
@@ -406,4 +410,102 @@ iframe{
 
 .logo-container{
     margin-bottom: 32px;
+}
+
+.hide{
+    display: none;
+}
+
+.btn-responsive{
+    width: 18px;
+    height: 13px;
+    margin-top: 35px;
+    margin-right: 30px;
+    background: none;
+    border: none;
+    display: none;
+}
+@media screen and (max-width:576px) {
+    .nav-list{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .btn-responsive{
+    width: 18px;
+    height: 13px;
+    margin-top: 40px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    display: block;
+    cursor: pointer;
+    }
+    .nav-titile{
+        margin-left: 20px;
+    }
+    .banner-section{
+        width: 100%;
+        background-size: 100% auto;
+        height: auto;
+        height: 440px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .banner-main {
+    height: auto;
+}
+    .image-section{
+        height: 200px;
+        width: 200px;
+    }
+    .mic-img{
+        width: 50px;
+        height: 76px;
+    }
+    .img-btn{
+        margin-top: -140px;
+        margin-left: 140px;
+        width: 70px;
+        height: 30px;
+        font-size: 0.85rem;
+    }
+    .banner-titile {
+    font-size: 2.25rem;
+    margin-top: 25px;
+}
+.banner-contant{
+    text-align: center;
+    margin-bottom: 39px; 
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+    .podcast-container{
+        padding: 40px 20px;
+    }
+    .pod-titile{
+        font-size: 2rem;
+    }
+    .p-tag-descriton {
+    margin: 0px;
+    margin-top: 0px;
+    opacity: 60%;
+    align-items: center;
+    }
+    .podcast-card{
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    }
+    #hr{
+        margin-top: 40px;
+        max-width: 400px;
+    }
+    
 }
