@@ -540,7 +540,7 @@ iframe{
 
     .podcast-container{
         width: 100%;
-        padding: 40px 20px;
+        padding: 60px 16px;
     }
     .pod-titile{
         font-size: 2rem;
@@ -551,7 +551,12 @@ iframe{
     opacity: 60%;
     align-items: center;
     }
+    .podcast-section{
+        height: auto;
+        padding-bottom: 20px;
+    }
     .podcast-card{
+    width: 100%;    
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
@@ -559,18 +564,22 @@ iframe{
     margin-bottom: 20px;
 
     }
+    .card {
+    width: 100%;
+    height: 92px;
+}
     #hr{
         margin-top: 40px;
-        max-width: 400px;
+        width: 100%;
     }
 
     .main-titile {
-    max-width: 440px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 40px;
     }
     .box-container {
-    max-width: 440px;
+    width: 100%;
     margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -581,17 +590,18 @@ iframe{
    }
 
    .box-1{
-    width: 400px;
+    width:100%;
     height: 287px;
-    padding: 40px;
+    padding: 30px;
    }
 
    .box-2 {
-    width: 400px;
+    width: 100%;
     height: 215px;
+    padding: 30px;
    }
    #last-box{
-    width: 400px;
+    width: 100%;
     height: 215px;
     /* margin-bottom: 40px; */
    }
@@ -601,8 +611,8 @@ iframe{
    }
 
    #second-last-box{
-    padding-bottom: 15px;
-    padding-right: 20px;
+    padding-bottom: 36px;
+    padding-right: 0px;;
    }
    .features-titile{
     font-size: 1.20rem;
@@ -633,7 +643,7 @@ iframe{
   }
   
   .host-container{
-    max-width: 400px;
+    width: 100%;
     height: 483px;
     flex-direction: column;
     align-items: center;
@@ -675,6 +685,7 @@ iframe{
     justify-items: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 
   }
   .footer-icon{
